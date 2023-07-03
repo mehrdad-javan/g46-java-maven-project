@@ -11,6 +11,9 @@ public class App
 
     // this is the main method - not allow to change it
     public static void main(String[] args){
+
+        /*
+
         System.out.println("Hello World!");
 
         byte redColorCode = 127;
@@ -80,6 +83,10 @@ public class App
 
         int age = 10;
 
+
+        */
+
+
         /*if(age >= 18){
             System.out.println("You can have a beer!");
         } else {
@@ -87,6 +94,7 @@ public class App
         }*/
 
 
+        /*
         if (age >= 18){
             System.out.println("You can have a beet!");
         } else if(age < 18 && age >=15){
@@ -130,13 +138,21 @@ public class App
         System.out.println(name.toUpperCase());
         System.out.println(name.toLowerCase());
 
+         */
 
 
 
+        Person erik = new Person();
+        erik.firstName = "Erik";
+        erik.lastName = "Svensson";
+        erik.age = 42;
+        erik.hobby = "programming";
 
-
-
-
+        Person mehrdad = new Person();
+        mehrdad.firstName = "Mehrdad";
+        mehrdad.lastName = "Javan";
+        mehrdad.age = 34;
+        mehrdad.hobby = "programming";
 
 
 
