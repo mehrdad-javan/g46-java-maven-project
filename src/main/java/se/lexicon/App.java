@@ -147,12 +147,14 @@ public class App
         erik.lastName = "Svensson";
         erik.age = 42;
         erik.hobby = "programming";
+        System.out.println(erik.getInformation());
 
         Person mehrdad = new Person();
         mehrdad.firstName = "Mehrdad";
         mehrdad.lastName = "Javan";
         mehrdad.age = 34;
         mehrdad.hobby = "programming";
+        System.out.println(mehrdad.getInformation());
 
 
 
