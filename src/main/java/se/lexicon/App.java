@@ -1,8 +1,9 @@
 package se.lexicon;
 
 
-public class App
-{
+import java.util.Scanner;
+
+public class App {
 
     /*
         this method will print
@@ -10,7 +11,7 @@ public class App
      */
 
     // this is the main method - not allow to change it
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         /*
 
@@ -86,13 +87,11 @@ public class App
 
         */
 
-
         /*if(age >= 18){
             System.out.println("You can have a beer!");
         } else {
             System.out.println("You cannot have a beer!");
         }*/
-
 
         /*
         if (age >= 18){
@@ -140,8 +139,7 @@ public class App
 
          */
 
-
-
+        /*
         Person erik = new Person();
         erik.firstName = "Erik";
         erik.lastName = "Svensson";
@@ -155,9 +153,43 @@ public class App
         mehrdad.age = 34;
         mehrdad.hobby = "programming";
         System.out.println(mehrdad.getInformation());
+*/
 
 
+        displayMenu();
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter number1:");
+        int number1 = scanner.nextInt();
+
+        System.out.println("Enter number2:");
+        int number2 = scanner.nextInt();
+
+        int result = addition(number1, number2);
+        System.out.println("Addition is done: result => " + result);
+
+
+    }
+
+    public static int addition(int n1, int n2) {
+        return n1 + n2;
+    }
+
+    public static void displayMenu() {
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("0. Terminate application");
+    }
+
+    // Ctrl + Alt + L
+
+    public static String getShortestWord(String word1, String word2) {
+        if (word1.length() < word2.length()) {
+            return word1;
+        } else {
+            return word2;
+        }
     }
 
 
